@@ -1,0 +1,312 @@
+20150402_23:16,PreRequisite,Browse to NG7 deployment <site>,TEST STEP DATA: site=https://release.ng7.io/#/login  browser=prod,Pass,catastrophic check,,,5845
+20150402_23:16,PreRequisite,Check that the Username field is displayed,,Pass,catastrophic check,,,12093
+20150402_23:16,PreRequisite,Check that the Password field is displayed,,Pass,catastrophic check,,,2063
+20150402_23:16,PreRequisite,Check that the forgot password text is displayed,,Pass,catastrophic check,,,2063
+20150402_23:16,PreRequisite,Attempt to log on with invalid credentials <invalidUser / invalidPassword>,TEST STEP DATA: invalidUser = tester1 / invalidPassword = cupcake,Pass,,,,2520
+20150402_23:16,PreRequisite,Check the invalid login messages pop up for the invalid password login attempt,,Pass,doNotDeliver check,,,2072
+20150402_23:16,PreRequisite,Attempt to log into NG7 with valid credentials,,Pass,catastrophic check,,,14779
+20150402_23:16,PreRequisite,Check if User Password Expired Screen is displayed,,Pass,catastrophic check,,,3046
+20150402_23:16,PreRequisite,Click on Menu pulldown,,Pass,catastrophic check,catastrophic check,,4176
+20150402_23:16,PreRequisite,Check Menu opens,,Pass,catastrophic check,,,10078
+20150402_23:16,PreRequisite,Log out user,,Pass,,,,5215
+20150402_23:16,PreRequisite,Check that logout completed by checking login page is displayed,,Pass,doNotDeliver check,,,10020
+20150402_23:16,PreRequisite,PASS,12,0,0,0,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,UIRecon_MainPage,If layout selector comes up select Staff Layout,,Pass,,,,13219
+20150402_23:16,UIRecon_MainPage,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3075
+20150402_23:16,UIRecon_MainPage,Check that the Status icon is displayed and is active,,Pass,,,,2037
+20150402_23:16,UIRecon_MainPage,Click Menu button and check Menu opens,,Pass,,,,8235
+20150402_23:16,UIRecon_MainPage,Click Locations field and check Location Status pulldown opens,,Pass,,,,8296
+20150402_23:16,UIRecon_MainPage,Click User Status button and check User Status pulldown opens,,Pass,,,,8204
+20150402_23:16,UIRecon_MainPage,Check that build number displays,TEST STEP DATA: build= -,Pass,doNotDeliver check,,,204
+20150402_23:16,UIRecon_MainPage,Check that elapsed connection time displays,TEST STEP DATA: time=00:00:00,Pass,,,,94
+20150402_23:16,UIRecon_MainPage,Check the Scheduling Notifications widget is visible,,Pass,,,,2077
+20150402_23:16,UIRecon_MainPage,Check the Scheduler button/widget is visible,,Pass,,,,2137
+20150402_23:16,UIRecon_MainPage,Click the Scheduler widget Resource field and check the Resource pulldown list is not empty,,Pass,,,,8361
+20150402_23:16,UIRecon_MainPage,PASS,11,0,0,0,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,UIRecon_PatientCenter,If layout selector comes up select Staff Layout,,Pass,,,,13267
+20150402_23:16,UIRecon_PatientCenter,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3076
+20150402_23:16,UIRecon_PatientCenter,Set service location to <location>,TEST STEP DATA: location = Austin Internal Medicine,Pass,,,,31
+20150402_23:16,UIRecon_PatientCenter,Search for patient <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,catastrophic check,,,4359
+20150402_23:16,UIRecon_PatientCenter,Select search result for patient <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,catastrophic check,,,11694
+20150402_23:16,UIRecon_PatientCenter,Patient Center for <patientName> was opened,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,93
+20150402_23:16,UIRecon_PatientCenter,Click on the tab for patient <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,2112
+20150402_23:16,UIRecon_PatientCenter,Check that the patient center opens,,Pass,,,,2033
+20150402_23:16,UIRecon_PatientCenter,Check the summary info is displayed,,Pass,,,,5056
+20150402_23:16,UIRecon_PatientCenter,Check the patient name <patientName> is displayed,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,2046
+20150402_23:16,UIRecon_PatientCenter,Check the photo/financial module flipper pane is displayed,,Pass,,,,2044
+20150402_23:16,UIRecon_PatientCenter,Check the patient photo container is visible so that patient photo is displayed,,Pass,,,,2183
+20150402_23:16,UIRecon_PatientCenter,Click on patient photo container to flip the panel,,Pass,,,,2110
+20150402_23:16,UIRecon_PatientCenter,Check the inner financial module is displayed,,Pass,,,,2036
+20150402_23:16,UIRecon_PatientCenter,Check the patient photo container is hidden so that photo is no longer displayed,,Pass,,,,16
+20150402_23:16,UIRecon_PatientCenter,Click Patient Center tab,,Pass,,,,3191
+20150402_23:16,UIRecon_PatientCenter,Click Healthfeed tab,,Pass,,,,2190
+20150402_23:16,UIRecon_PatientCenter,Click Activities tab,,Pass,,,,5904
+20150402_23:16,UIRecon_PatientCenter,Click Add New Activity '+' button,,Pass,,,,3114
+20150402_23:16,UIRecon_PatientCenter,Check the Add New Activity form pops open,,Pass,,,,0
+20150402_23:16,UIRecon_PatientCenter,Click Cancel on Add New Activity form,,Fail,,,,2263,failureTrace :Set service location to <location> | Search for patient <patientName> | Select search result for patient <patientName> | Patient Center for <patientName> was opened | Click on the tab for patient <patientName> | Check that the patient center opens | Check the summary info is displayed | Check the patient name <patientName> is displayed | Check the photo/financial module flipper pane is displayed | Check the patient photo container is visible so that patient photo is displayed | Click on patient photo container to flip the panel | Check the inner financial module is displayed | Check the patient photo container is hidden so that photo is no longer displayed | Click Patient Center tab | Click Healthfeed tab | Click Activities tab | Click Add New Activity '+' button | Check the Add New Activity form pops open | Click Cancel on Add New Activity form | 
+20150402_23:16,UIRecon_PatientCenter,Click Patient Center tab,,Pass,,,,3153
+20150402_23:16,UIRecon_PatientCenter,Click Timeline View button,,Fail,,,,2155,failureTrace :Set service location to <location> | Search for patient <patientName> | Select search result for patient <patientName> | Patient Center for <patientName> was opened | Click on the tab for patient <patientName> | Check that the patient center opens | Check the summary info is displayed | Check the patient name <patientName> is displayed | Check the photo/financial module flipper pane is displayed | Check the patient photo container is visible so that patient photo is displayed | Click on patient photo container to flip the panel | Check the inner financial module is displayed | Check the patient photo container is hidden so that photo is no longer displayed | Click Patient Center tab | Click Healthfeed tab | Click Activities tab | Click Add New Activity '+' button | Check the Add New Activity form pops open | Click Cancel on Add New Activity form | Click Patient Center tab | Click Timeline View button | 
+20150402_23:16,UIRecon_PatientCenter,Check Timeline is displayed,,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Check timeline year bar is displayed,,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Check timeline filter menu button is displayed,,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Click dashboard menu button,,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Check that timeline filters list is visible,,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Check that list of Timeline filters is not empty,,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Click on time line filter # 0,,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Check that timeline is displayed after filter is clicked,,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Check patient tab for patient <patientName> is displayed below the toolbar,TEST STEP DATA: patientName = Jessica Randall,Blocked,,,,0
+20150402_23:16,UIRecon_PatientCenter,Click Alerts tab,,Pass,,,,3216
+20150402_23:16,UIRecon_PatientCenter,Click Medication Allergies tab,,Pass,,,,3229
+20150402_23:16,UIRecon_PatientCenter,Click Demographics tab,,Pass,,,,3247
+20150402_23:16,UIRecon_PatientCenter,Click Financial tab,,Pass,,,,3307
+20150402_23:16,UIRecon_PatientCenter,Click Images (Documents) tab,,Pass,,,,4058
+20150402_23:16,UIRecon_PatientCenter,Click Insurance tab,,Pass,,,,3263
+20150402_23:16,UIRecon_PatientCenter,Click Medications tab,,Pass,,,,3226
+20150402_23:16,UIRecon_PatientCenter,Click Orders tab,,Pass,,,,3281
+20150402_23:16,UIRecon_PatientCenter,Click Significant Events tab,,Pass,,,,3317
+20150402_23:16,UIRecon_PatientCenter,Click Visit History tab,,Pass,,,,3356
+20150402_23:16,UIRecon_PatientCenter,Click Wellness Center tab,,Pass,,,,3426
+20150402_23:16,UIRecon_PatientCenter,Click Problems tab,,Pass,,,,3307
+20150402_23:16,UIRecon_PatientCenter,FAIL,33,2,9,0,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,UIRecon_PatientFinancials,If layout selector comes up select Staff Layout,,Pass,,,,13127
+20150402_23:16,UIRecon_PatientFinancials,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3071
+20150402_23:16,UIRecon_PatientFinancials,Set service location to Austin Internal Medicine,TEST STEP DATA: location = Austin Internal Medicine,Pass,,,,31
+20150402_23:16,UIRecon_PatientFinancials,Search for patient <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,4501
+20150402_23:16,UIRecon_PatientFinancials,Select search result for patient <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,11839
+20150402_23:16,UIRecon_PatientFinancials,Patient Center for <patientName> was opened,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,94
+20150402_23:16,UIRecon_PatientFinancials,Check that the patient center fpr <patientName> opens,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,2044
+20150402_23:16,UIRecon_PatientFinancials,Click Financial tab,,Pass,,,,3470
+20150402_23:16,UIRecon_PatientFinancials,Financial grid opened,,Pass,,,,4056
+20150402_23:16,UIRecon_PatientFinancials,Financial grid Charges link,,Pass,,,,2077
+20150402_23:16,UIRecon_PatientFinancials,Click Financial grid Charges link,,Pass,,,,2175
+20150402_23:16,UIRecon_PatientFinancials,Check Financial Manager / Batch Maintenance opened,,WIP,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,1070
+20150402_23:16,UIRecon_PatientFinancials,Close Financial Manager / Batch Maintenance tab,,WIP,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,2370
+20150402_23:16,UIRecon_PatientFinancials,Financial grid Transactions link,,Pass,,,,2065
+20150402_23:16,UIRecon_PatientFinancials,Click Financial grid Transactions link,,Pass,,,,2110
+20150402_23:16,UIRecon_PatientFinancials,Check Financial Manager / Batch Maintenance opened,,WIP,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,1206
+20150402_23:16,UIRecon_PatientFinancials,Close Financial Manager / Batch Maintenance tab,,WIP,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,2305
+20150402_23:16,UIRecon_PatientFinancials,Open Financial Manager from menu,,Pass,,,,7777
+20150402_23:16,UIRecon_PatientFinancials,Click Generate Claims tab,,Pass,,,,4857
+20150402_23:16,UIRecon_PatientFinancials,Click ERA Exceptions tab,,Pass,,,,3927
+20150402_23:16,UIRecon_PatientFinancials,Click Statements tab,,Pass,,,,3805
+20150402_23:16,UIRecon_PatientFinancials,Click Batch Maintenance tab,,Pass,,,,3809
+20150402_23:16,UIRecon_PatientFinancials,Close Financial Manager,,Pass,,,,2307
+20150402_23:16,UIRecon_PatientFinancials,Financial grid Visit ID pulldown,,Pass,,,,2031
+20150402_23:16,UIRecon_PatientFinancials,Financial grid Visit ID pulldown list is not empty,,Fail,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,7101,failureTrace :Set service location to Austin Internal Medicine | Search for patient <patientName> | Select search result for patient <patientName> | Patient Center for <patientName> was opened | Check that the patient center fpr <patientName> opens | Click Financial tab | Financial grid opened | Financial grid Charges link | Click Financial grid Charges link | Check Financial Manager / Batch Maintenance opened | Close Financial Manager / Batch Maintenance tab | Financial grid Transactions link | Click Financial grid Transactions link | Check Financial Manager / Batch Maintenance opened | Close Financial Manager / Batch Maintenance tab | Open Financial Manager from menu | Click Generate Claims tab | Click ERA Exceptions tab | Click Statements tab | Click Batch Maintenance tab | Close Financial Manager | Financial grid Visit ID pulldown | Financial grid Visit ID pulldown list is not empty | 
+20150402_23:16,UIRecon_PatientFinancials,PASS,20,0,0,5,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,UIRecon_RegistrationWizard,If layout selector comes up select Staff Layout,,Pass,,,,13030
+20150402_23:16,UIRecon_RegistrationWizard,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3061
+20150402_23:16,UIRecon_RegistrationWizard,Click Registration from the Home menu,,Pass,,,,8958
+20150402_23:16,UIRecon_RegistrationWizard,Check that Registration wizard opened,,Pass,,,,3079
+20150402_23:16,UIRecon_RegistrationWizard,Verify Registration wizard contains Save button,,Pass,,,,3048
+20150402_23:16,UIRecon_RegistrationWizard,Verify Registration wizard contains Cancel button,,Pass,,,,108
+20150402_23:16,UIRecon_RegistrationWizard,Verify Registration wizard contains Check In button,,Pass,,,,2033
+20150402_23:16,UIRecon_RegistrationWizard,Click Demographics tab on Registration wizard,,Pass,,,,29
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a Search field on the Demographics tab,,Pass,,,,4046
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a First Name field on the Demographics tab,,Pass,,,,4033
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a Middle Name field on the Demographics tab,,Pass,,,,4046
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a Last Name field on the Demographics tab,,Pass,,,,2035
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a Sex field on the Demographics tab,,Pass,,,,47
+20150402_23:16,UIRecon_RegistrationWizard,Verify Sex list is not empty,,Pass,,,,8354
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a Gender field on the Demographics tab,,Pass,,,,78
+20150402_23:16,UIRecon_RegistrationWizard,Verify Gender list is not empty,,Pass,,,,8347
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a DOB field on the Demographics tab,,Pass,,,,2075
+20150402_23:16,UIRecon_RegistrationWizard,Click Extended Demographics tab on Registration wizard,,Pass,,,,2259
+20150402_23:16,UIRecon_RegistrationWizard,Click Contact Information tab on Registration wizard,,Pass,,,,2246
+20150402_23:16,UIRecon_RegistrationWizard,Verify Preferred Contact Method Address0 item is visible,,Pass,,,,31
+20150402_23:16,UIRecon_RegistrationWizard,Click Relationships tab on Registration wizard,,Pass,,,,2244
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a +Relationship link in the Relationships tab,,Pass,,,,32
+20150402_23:16,UIRecon_RegistrationWizard,Verify there is a 'Guarantor must be 18 years or older' message in the Relationships tab,,Fail,,,,62,failureTrace :Click Registration from the Home menu | Check that Registration wizard opened | Verify Registration wizard contains Save button | Verify Registration wizard contains Cancel button | Verify Registration wizard contains Check In button | Click Demographics tab on Registration wizard | Verify there is a Search field on the Demographics tab | Verify there is a First Name field on the Demographics tab | Verify there is a Middle Name field on the Demographics tab | Verify there is a Last Name field on the Demographics tab | Verify there is a Sex field on the Demographics tab | Verify Sex list is not empty | Verify there is a Gender field on the Demographics tab | Verify Gender list is not empty | Verify there is a DOB field on the Demographics tab | Click Extended Demographics tab on Registration wizard | Click Contact Information tab on Registration wizard | Verify Preferred Contact Method Address0 item is visible | Click Relationships tab on Registration wizard | Verify there is a +Relationship link in the Relationships tab | Verify there is a 'Guarantor must be 18 years or older' message in the Relationships tab | 
+20150402_23:16,UIRecon_RegistrationWizard,Click Insurance tab on Registration wizard,,Pass,,,,2316
+20150402_23:16,UIRecon_RegistrationWizard,Click Visit Information tab on Registration wizard,,Pass,,,,2253
+20150402_23:16,UIRecon_RegistrationWizard,Click Forms tab on Registration wizard,,Pass,,,,2556
+20150402_23:16,UIRecon_RegistrationWizard,Click Cancel button on Registration wizard,,Pass,,,,2177
+20150402_23:16,UIRecon_RegistrationWizard,FAIL,26,1,0,0,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,UIRecon_ReportsDisplay,If layout selector comes up select Staff Layout,,Pass,,,,13076
+20150402_23:16,UIRecon_ReportsDisplay,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3075
+20150402_23:16,UIRecon_ReportsDisplay,Open Reports interface from home menu,,Pass,,,,8126
+20150402_23:16,UIRecon_ReportsDisplay,Check Reports Folder list is not empty,,Pass,,,,47
+20150402_23:16,UIRecon_ReportsDisplay,Click on Base Reports,TEST STEP DATA: folder name = Base Reports,Pass,,,,2094
+20150402_23:16,UIRecon_ReportsDisplay,Check Reports sub folder list is not empty,,Pass,,,,15
+20150402_23:16,UIRecon_ReportsDisplay,Click on Scheduling,,Pass,,,,2302
+20150402_23:16,UIRecon_ReportsDisplay,Check Reports file list is not empty,,Pass,,,,15
+20150402_23:16,UIRecon_ReportsDisplay,Click on report file <reportTitle>,TEST STEP DATA: reportTitle = Appointment Listing,Pass,,,,2155
+20150402_23:16,UIRecon_ReportsDisplay,Click on Open Report button,,Pass,,,,2331
+20150402_23:16,UIRecon_ReportsDisplay,Check Report tab is open,,Pass,,,,31
+20150402_23:16,UIRecon_ReportsDisplay,Check that the report contains a header,,Pass,,,,2036
+20150402_23:16,UIRecon_ReportsDisplay,Check that the report matches the title,,Pass,,,,125
+20150402_23:16,UIRecon_ReportsDisplay,Check open report contains section tabs,,Pass,,,,5043
+20150402_23:16,UIRecon_ReportsDisplay,Check that report grid is not visible,,Pass,,,,1045
+20150402_23:16,UIRecon_ReportsDisplay,Click Run button,,Pass,,,,2205
+20150402_23:16,UIRecon_ReportsDisplay,Check open report contains an export button with export options,,Pass,,,,48375
+20150402_23:16,UIRecon_ReportsDisplay,Check Graph Button,,Pass,,,,4301
+20150402_23:16,UIRecon_ReportsDisplay,Check Icon Button,,Pass,,,,4168
+20150402_23:16,UIRecon_ReportsDisplay,Check that report grid appears,,Fail,,,,54271,failureTrace :Open Reports interface from home menu | Check Reports Folder list is not empty | Click on Base Reports | Check Reports sub folder list is not empty | Click on Scheduling | Check Reports file list is not empty | Click on report file <reportTitle> | Click on Open Report button | Check Report tab is open | Check that the report contains a header | Check that the report matches the title | Check open report contains section tabs | Check that report grid is not visible | Click Run button | Check open report contains an export button with export options | Check Graph Button | Check Icon Button | Check that report grid appears | 
+20150402_23:16,UIRecon_ReportsDisplay,Check open report contains a Save button,,Blocked,,,,0
+20150402_23:16,UIRecon_ReportsDisplay,FAIL,19,1,1,0,0,,SUMMARY,Subha,
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,If layout selector comes up select Staff Layout,,Pass,,,,13128
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3061
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click Scheduler from the Home menu,,Pass,,,,7601
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Check that Scheduler opened,,Pass,,,,2036
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Scheduler is displayed,,Pass,,,,3025
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Collapse Resources pane,,Pass,,,,2115
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Expand Resources pane,,Pass,,,,2110
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Resource List is not empty,,Pass,,,,6063
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Weekly View button group is displayed,,Pass,,,,2054
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Weekly View Day button is displayed,,Pass,,,,2068
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Weekly View Week (5) button is displayed,,Pass,,,,2066
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Weekly View Week (7) button is displayed,,Pass,,,,2069
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Add Appointment button,,Pass,,,,2051
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click Add Appointment button,,Pass,,,,4334
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Check that New Appointment wizard pops up,,Pass,,,,283
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify New Appointment wizard contains Save button,,Pass,,,,2054
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify New Appointment wizard contains Cancel button,,Pass,,,,2154
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify New Appointment wizard contains Check In button,,Pass,,,,2033
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click General Demographics tab on New Appointment window,,Pass,,,,47
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify there is a Search field on the Patient tab,,Pass,,,,2061
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify there is a No Patient button on the Patient tab,,Pass,,,,2236
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click Contact Information tab on New Appointment window,,Pass,,,,2223
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click Relationships tab on New Appointment window,,Pass,,,,2170
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click Insurance tab on New Appointment window,,Pass,,,,2252
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click Appointment tab on New Appointment window,,Pass,,,,2281
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Appt tab contains a Date field,,Pass,,,,2036
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Appt tab contains a Resources field,,Pass,,,,2051
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Resources list is not empty,,Pass,,,,8423
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Appt tab contains a Time field,,Pass,,,,4139
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Time list is not empty,,Pass,,,,8995
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Appt tab contains a Service Location field,,Pass,,,,2090
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Service Location list is not empty,,Pass,,,,8676
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Appt tab contains a Appointment Type field,,Pass,,,,2067
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Type list is not empty,,Pass,,,,8726
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click on Search Ahead tab to open the Search Ahead panel,,Pass,,,,2451
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead opens,,Pass,,,,4060
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead panel contains a End time select field,,Pass,,,,2074
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead End time list is not empty,,Pass,,,,8849
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead panel contains a Beginning Date picker field,,Pass,,,,2066
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead panel contains a Duration field,,Pass,,,,2051
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead Duration list is not empty,,Pass,,,,8591
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead panel contains an Appointment Type field,,Pass,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,2068
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead Appointment Type list is not empty,WIP: the test result for the step will be ignored; ,Fail,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,4250,failureTrace :Click Scheduler from the Home menu | Check that Scheduler opened | Scheduler is displayed | Collapse Resources pane | Expand Resources pane | Resource List is not empty | Weekly View button group is displayed | Weekly View Day button is displayed | Weekly View Week (5) button is displayed | Weekly View Week (7) button is displayed | Add Appointment button | Click Add Appointment button | Check that New Appointment wizard pops up | Verify New Appointment wizard contains Save button | Verify New Appointment wizard contains Cancel button | Verify New Appointment wizard contains Check In button | Click General Demographics tab on New Appointment window | Verify there is a Search field on the Patient tab | Verify there is a No Patient button on the Patient tab | Click Contact Information tab on New Appointment window | Click Relationships tab on New Appointment window | Click Insurance tab on New Appointment window | Click Appointment tab on New Appointment window | Verify Appt tab contains a Date field | Verify Appt tab contains a Resources field | Verify Resources list is not empty | Verify Appt tab contains a Time field | Verify Time list is not empty | Verify Appt tab contains a Service Location field | Verify Service Location list is not empty | Verify Appt tab contains a Appointment Type field | Verify Type list is not empty | Click on Search Ahead tab to open the Search Ahead panel | Verify Search Ahead opens | Verify Search Ahead panel contains a End time select field | Verify Search Ahead End time list is not empty | Verify Search Ahead panel contains a Beginning Date picker field | Verify Search Ahead panel contains a Duration field | Verify Search Ahead Duration list is not empty | Verify Search Ahead panel contains an Appointment Type field | Verify Search Ahead Appointment Type list is not empty | 
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead panel contains a Resource select field,,Pass,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,2084
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead Resource list is not empty,,Pass,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,8873
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead panel contains a Location select field,,Pass,,,,4223
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead Location list is not empty,,Fail,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,2240,failureTrace :Click Scheduler from the Home menu | Check that Scheduler opened | Scheduler is displayed | Collapse Resources pane | Expand Resources pane | Resource List is not empty | Weekly View button group is displayed | Weekly View Day button is displayed | Weekly View Week (5) button is displayed | Weekly View Week (7) button is displayed | Add Appointment button | Click Add Appointment button | Check that New Appointment wizard pops up | Verify New Appointment wizard contains Save button | Verify New Appointment wizard contains Cancel button | Verify New Appointment wizard contains Check In button | Click General Demographics tab on New Appointment window | Verify there is a Search field on the Patient tab | Verify there is a No Patient button on the Patient tab | Click Contact Information tab on New Appointment window | Click Relationships tab on New Appointment window | Click Insurance tab on New Appointment window | Click Appointment tab on New Appointment window | Verify Appt tab contains a Date field | Verify Appt tab contains a Resources field | Verify Resources list is not empty | Verify Appt tab contains a Time field | Verify Time list is not empty | Verify Appt tab contains a Service Location field | Verify Service Location list is not empty | Verify Appt tab contains a Appointment Type field | Verify Type list is not empty | Click on Search Ahead tab to open the Search Ahead panel | Verify Search Ahead opens | Verify Search Ahead panel contains a End time select field | Verify Search Ahead End time list is not empty | Verify Search Ahead panel contains a Beginning Date picker field | Verify Search Ahead panel contains a Duration field | Verify Search Ahead Duration list is not empty | Verify Search Ahead panel contains an Appointment Type field | Verify Search Ahead Appointment Type list is not empty | Verify Search Ahead panel contains a Resource select field | Verify Search Ahead Resource list is not empty | Verify Search Ahead panel contains a Location select field | Verify Search Ahead Location list is not empty | 
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead panel contains a Days of the Week selector group,,Pass,,,,31
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Verify Search Ahead panel contains a Suggest button,,Pass,,,,2067
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click on Search Ahead tab to close the Search Ahead panel,,Pass,,,,2313
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,Click Cancel button on New Appointment window,,Pass,,,,2270
+20150402_23:16,UIRecon_SchedulerNewAppointmentWizard,PASS,46,0,0,5,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,UIRecon_SmartFilesInterface,If layout selector comes up select Staff Layout,,Pass,,,,12992
+20150402_23:16,UIRecon_SmartFilesInterface,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3035
+20150402_23:16,UIRecon_SmartFilesInterface,Set service location to <location>,TEST STEP DATA: location = Austin Internal Medicine,Pass,,,,31
+20150402_23:16,UIRecon_SmartFilesInterface,Launch SmartFiles tab from Menu,,Pass,,,,7600
+20150402_23:16,UIRecon_SmartFilesInterface,Check SmartFiles tab opened,,Pass,,,,2034
+20150402_23:16,UIRecon_SmartFilesInterface,Check organization list is not empty,,Pass,catastrophic check,,,12240
+20150402_23:16,UIRecon_SmartFilesInterface,Select organization <organization>,TEST STEP DATA: organization = Austin Internal Medicine,Fail,,,,1030,failureTrace :Set service location to <location> | Launch SmartFiles tab from Menu | Check SmartFiles tab opened | Check organization list is not empty | Select organization <organization> | 
+20150402_23:16,UIRecon_SmartFilesInterface,SmartFile type search field is displayed,,Pass,,,,2075
+20150402_23:16,UIRecon_SmartFilesInterface,SmartItems search field is displayed,,Pass,,,,2045
+20150402_23:16,UIRecon_SmartFilesInterface,SmartType list is not empty,,Pass,catastrophic check,,,5057
+20150402_23:16,UIRecon_SmartFilesInterface,Click on SmartFile type Appointment Types,,Pass,,,,2614
+20150402_23:16,UIRecon_SmartFilesInterface,Check SmartFile List is displayed,,Pass,,,,5058
+20150402_23:16,UIRecon_SmartFilesInterface,Check SmartFile Update button is displayed,,Pass,,,,47
+20150402_23:16,UIRecon_SmartFilesInterface,Check SmartFile Remove button is displayed,,Pass,,,,31
+20150402_23:16,UIRecon_SmartFilesInterface,Check SmartFile Filter button is displayed,,Pass,,,,47
+20150402_23:16,UIRecon_SmartFilesInterface,Search SmartFile type <ruleType>,TEST STEP DATA: ruleType = Rule Set,Pass,,,,546
+20150402_23:16,UIRecon_SmartFilesInterface,Click on SmartFile type <ruleType>,TEST STEP DATA: ruleType = Rule Set,Pass,,,,3193
+20150402_23:16,UIRecon_SmartFilesInterface,Check Import Rule Set button is displayed,,Pass,,,,2046
+20150402_23:16,UIRecon_SmartFilesInterface,Click Import Rule Set button,,Pass,,,,2083
+20150402_23:16,UIRecon_SmartFilesInterface,Check Import Rule Set form opens,,Pass,,,,2044
+20150402_23:16,UIRecon_SmartFilesInterface,Click Import Rule Set form Cancel button,,Pass,,,,2096
+20150402_23:16,UIRecon_SmartFilesInterface,Check Direct/Indirect slider is displayed,,Pass,,,,2049
+20150402_23:16,UIRecon_SmartFilesInterface,Click Gear button,,Pass,,,,2118
+20150402_23:16,UIRecon_SmartFilesInterface,Select Add New Organization,,Pass,,,,2421
+20150402_23:16,UIRecon_SmartFilesInterface,Check Add New Organization form opens,,Pass,,,,2044
+20150402_23:16,UIRecon_SmartFilesInterface,Click Cancel on Add New Organization form,,Pass,,,,2271
+20150402_23:16,UIRecon_SmartFilesInterface,FAIL,25,1,0,0,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,UIRecon_Search,If layout selector comes up select Staff Layout,,Pass,,,,13322
+20150402_23:16,UIRecon_Search,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3061
+20150402_23:16,UIRecon_Search,Set service location to <location>,TEST STEP DATA: location = Austin Internal Medicine,Pass,,,,32
+20150402_23:16,UIRecon_Search,Search for <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,catastrophic check,,,4503
+20150402_23:16,UIRecon_Search,Select search result for <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,catastrophic check,,,11777
+20150402_23:16,UIRecon_Search,Check that context indicator for <patientName> is visible,TEST STEP DATA: patientName = Jessica Randall,Pass,IGNORE TEST RESULT FOR THIS STEP!; implementation/maintenance in progress,,,5059
+20150402_23:16,UIRecon_Search,Search for <patientNameWithTypo>,TEST STEP DATA: patientNameWithTypo = wiliam,Pass,,,,6580
+20150402_23:16,UIRecon_Search,Select search result <patientNameNoTypo> from suggested list,TEST STEP DATA: patientNameNoTypo = william,Pass,,,,2788
+20150402_23:16,UIRecon_Search,Select search result for <patientName2>,TEST STEP DATA: patientName2 = william J jefferson,Pass,,,,14970
+20150402_23:16,UIRecon_Search,Perform global search by focusing on search field with /<patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,11553
+20150402_23:16,UIRecon_Search,Hover over search result for <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,10086
+20150402_23:16,UIRecon_Search,Check search result details are visible,,Pass,,,,6079
+20150402_23:16,UIRecon_Search,Search for <medicationName1>,TEST STEP DATA: medicationName1 = viagra,Pass,,,,6494
+20150402_23:16,UIRecon_Search,Select search result for <medicationName1>,TEST STEP DATA: medicationName1 = viagra,Pass,,,,14907
+20150402_23:16,UIRecon_Search,Search for <allergyName1>,TEST STEP DATA: allergyName1 = egg,Pass,,,,6533
+20150402_23:16,UIRecon_Search,Select search result for <allergyName1>,TEST STEP DATA: allergyName1 = egg,Fail,,,,16257,failureTrace :Set service location to <location> | Search for <patientName> | Select search result for <patientName> | Check that context indicator for <patientName> is visible | Search for <patientNameWithTypo> | Select search result <patientNameNoTypo> from suggested list | Select search result for <patientName2> | Perform global search by focusing on search field with /<patientName> | Hover over search result for <patientName> | Check search result details are visible | Search for <medicationName1> | Select search result for <medicationName1> | Search for <allergyName1> | Select search result for <allergyName1> | 
+20150402_23:16,UIRecon_Search,Search for non-existent allergy 'bogus',,Pass,,,,4532
+20150402_23:16,UIRecon_Search,Check that a search result for non-existent allergy 'bogus' is not returned,,Pass,,,,16184
+20150402_23:16,UIRecon_Search,FAIL,16,1,0,1,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,SmartFilesInterface,If layout selector comes up select Staff Layout,,Pass,,,,13124
+20150402_23:16,SmartFilesInterface,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3062
+20150402_23:16,SmartFilesInterface,Launch SmartFiles from Menu,,Pass,,,,7709
+20150402_23:16,SmartFilesInterface,Check SmartFiles opened,,Pass,,,,2044
+20150402_23:16,SmartFilesInterface,Check organization list is not empty,,Pass,,,,12201
+20150402_23:16,SmartFilesInterface,Select organization <organization>,TEST STEP DATA: organization = ;Austin Internal Medicine,Pass,,,,8574
+20150402_23:16,SmartFilesInterface,Search smartFile type for reason for cancelling an appointment,,Pass,,,,969
+20150402_23:16,SmartFilesInterface,Click on smartFile type for reason for cancelling an appointment,,Pass,,,,6005
+20150402_23:16,SmartFilesInterface,Click on Add SmartItem button,,Pass,,,,2236
+20150402_23:16,SmartFilesInterface,Check that SmartItem for reasonf or cancelling an appointment opens,,Pass,,,,1141
+20150402_23:16,SmartFilesInterface,Populate the Cancel Reason Name field with <smartFileName>,TEST STEP DATA: smartFileName = random cancellation reason 978571_648795,Pass,,,,1020
+20150402_23:16,SmartFilesInterface,Click on the SmartForm Add button,,Pass,,,,2119
+20150402_23:16,SmartFilesInterface,Check smartform closed,,Pass,,,,3044
+20150402_23:16,SmartFilesInterface,Find created random cancellation reason smart file <smartFileName>,TEST STEP DATA: smartFileName = random cancellation reason 978571_648795,Pass,,,,2880
+20150402_23:16,SmartFilesInterface,Search SmartFile type Appointment Types,,Pass,,,,978
+20150402_23:16,SmartFilesInterface,Click on SmartFile type Appointment Types,,Pass,,,,2165
+20150402_23:16,SmartFilesInterface,Click on Add SmartItem button,,Pass,,,,4342
+20150402_23:16,SmartFilesInterface,Check that SmartItem with header Appointment Type opens,,Pass,,,,1497
+20150402_23:16,SmartFilesInterface,Populate the Appointment Label field with <label>,TEST STEP DATA: label=migraine checkup 978571_648795,Pass,,,,929
+20150402_23:16,SmartFilesInterface,Click on the SmartForm Add button,,Pass,,,,2090
+20150402_23:16,SmartFilesInterface,Check smartform closed,,Pass,,,,3043
+20150402_23:16,SmartFilesInterface,Find smart file <smartFileName2>,TEST STEP DATA: smartFileName2=migraine checkup 978571_648795,Pass,,,,4799
+20150402_23:16,SmartFilesInterface,Click Update on the SmartFile entry <smartFileName2,TEST STEP DATA: smartFileName2=migraine checkup 978571_648795,Pass,,,,4708
+20150402_23:16,SmartFilesInterface,Click 'Cancel' on the SmartForm,,Pass,,,,2104
+20150402_23:16,SmartFilesInterface,Check smartform closed,,Pass,,,,3032
+20150402_23:16,SmartFilesInterface,Click Update on SmartFile entry <smartFileName2>,TEST STEP DATA: smartFileName2=migraine checkup 978571_648795,Pass,,,,4747
+20150402_23:16,SmartFilesInterface,Update the value on the Appointment Label field to <smartFileName2_updated>,TEST STEP DATA: smartFileName2_updated=migraine checkup 978571_648795_upd,Pass,,,,769
+20150402_23:16,SmartFilesInterface,Click on the SmartForm Update button,,Pass,,,,2107
+20150402_23:16,SmartFilesInterface,Check smartform closed,,Pass,,,,3015
+20150402_23:16,SmartFilesInterface,Find created smart file <name>,TEST STEP DATA: name = migraine checkup 978571_648795_upd,Pass,,,,4550
+20150402_23:16,SmartFilesInterface,Click Remove on SmartFile entry <name>,TEST STEP DATA: name = migraine checkup 978571_648795_upd,Pass,,,,4845
+20150402_23:16,SmartFilesInterface,Click Delete on the confirmation dialog,,Pass,,,,2108
+20150402_23:16,SmartFilesInterface,PASS,32,0,0,0,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,RegisterPatient,If layout selector comes up select Staff Layout,,Pass,,,,16670
+20150402_23:16,RegisterPatient,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3062
+20150402_23:16,RegisterPatient,Generate unique ID <uid> for new patient name and search for it to verify the patient does not exist,TEST STEP DATA: uid=339761_363590,Pass,,,,14331
+20150402_23:16,RegisterPatient,Open the patient registration wizard,,Pass,,,,8876
+20150402_23:16,RegisterPatient,Check registration wizard opens,,Pass,,,,3077
+20150402_23:16,RegisterPatient,Register patient Walter White_<uid>,TEST STEP DATA: uid=339761_363590 FirstName=Anna  MiddleName=<uid> LastName=White_<uid>,Fail,,,,48219,failureTrace :Generate unique ID <uid> for new patient name and search for it to verify the patient does not exist | Open the patient registration wizard | Check registration wizard opens | Register patient Walter White_<uid> | 
+20150402_23:16,RegisterPatient,Search for unique id <uid> to see that newly registered patient is found,TEST STEP DATA: uid=339761_363590,Blocked,,,,8411
+20150402_23:16,RegisterPatient,FAIL,5,1,1,0,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,CheckEligibility,If layout selector comes up select Staff Layout,,Pass,,,,13223
+20150402_23:16,CheckEligibility,Log in to NG7,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3062
+20150402_23:16,CheckEligibility,Set service location to Austin Internal Medicine,TEST STEP DATA: location = Austin Internal Medicine,Pass,,,,31
+20150402_23:16,CheckEligibility,Search for patient <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,4325
+20150402_23:16,CheckEligibility,Select search result for patient <patientName>,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,11916
+20150402_23:16,CheckEligibility,Patient Center for <patientName> was opened,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,78
+20150402_23:16,CheckEligibility,Check that the patient center fpr <patientName> opens,TEST STEP DATA: patientName = Jessica Randall,Pass,,,,2028
+20150402_23:16,CheckEligibility,Click Financial tab,,Pass,,,,3423
+20150402_23:16,CheckEligibility,Visit History tab,,Pass,,,,3810
+20150402_23:16,CheckEligibility,Click Insurance tab,,Pass,,,,3407
+20150402_23:16,CheckEligibility,Check Eligibility Button,,Pass,,,,2157
+20150402_23:16,CheckEligibility,PASS,11,0,0,0,0,,SUMMARY,Sujata Sudhakar,
+20150402_23:16,SchedulingNoPatientDoubleClick,If layout selector comes up select Staff Layout,,Pass,,,,13194
+20150402_23:16,SchedulingNoPatientDoubleClick,Log in to https://release.ng7.io/#/login; code=00,TEST STEP DATA: regionTested = https://release.ng7.io/#/login,Pass,,,,3062
+20150402_23:16,SchedulingNoPatientDoubleClick,Click Scheduler from the Home menu,,Pass,,,,7595
+20150402_23:16,SchedulingNoPatientDoubleClick,Populate the Jump to date field with the appointment date 04/14/2015,,Pass,,,,4499
+20150402_23:16,SchedulingNoPatientDoubleClick,Select resource Graciela . Hernandez MD,,Fail,,,,7379,failureTrace :Click Scheduler from the Home menu | Populate the Jump to date field with the appointment date 04/14/2015 | Select resource Graciela . Hernandez MD | 
+20150402_23:16,SchedulingNoPatientDoubleClick,Check the resource's apptOverlay object is displayed,,Blocked,,,,1002
+20150402_23:16,SchedulingNoPatientDoubleClick,Click the Day view button,,Blocked,,,,0
+20150402_23:16,SchedulingNoPatientDoubleClick,Double-click on the scheduler grid of Graciela . Hernandez MD,,Blocked,,,,0
+20150402_23:16,SchedulingNoPatientDoubleClick,Check that New Appointment wizard pops up,,Blocked,,,,5009
+20150402_23:16,SchedulingNoPatientDoubleClick,Click Cancel on Add Appointment wizard,,Blocked,,,,0
+20150402_23:16,SchedulingNoPatientDoubleClick,Create an appointment,TEST STEP DATA: patientName='No Patient' apptDate=04/14/2015 apptTime=11:00 AM resource=Graciela . Hernandez  MD,Fail,,,,57955,failureTrace :Click Scheduler from the Home menu | Populate the Jump to date field with the appointment date 04/14/2015 | Select resource Graciela . Hernandez MD | Check the resource's apptOverlay object is displayed | Click the Day view button | Double-click on the scheduler grid of Graciela . Hernandez MD | Check that New Appointment wizard pops up | Click Cancel on Add Appointment wizard | Create an appointment | 
+20150402_23:16,SchedulingNoPatientDoubleClick,Find appointment for No Patient in appointment overlay for selected date and provider,,Fail,,,,10378,failureTrace :Click Scheduler from the Home menu | Populate the Jump to date field with the appointment date 04/14/2015 | Select resource Graciela . Hernandez MD | Check the resource's apptOverlay object is displayed | Click the Day view button | Double-click on the scheduler grid of Graciela . Hernandez MD | Check that New Appointment wizard pops up | Click Cancel on Add Appointment wizard | Create an appointment | Find appointment for No Patient in appointment overlay for selected date and provider | 
+20150402_23:16,SchedulingNoPatientDoubleClick,Check that the appointment popUp is visible when the appointment pill is clicked,,Blocked,,,,0
+20150402_23:16,SchedulingNoPatientDoubleClick,FAIL,4,3,6,0,0,,SUMMARY,Maria Garcia-Bodoh,
+20150402_23:16,CatastrophicChecks_release,PASS,0,0,0,0,0,,SUMMARY,Maria Garcia-Bodoh,

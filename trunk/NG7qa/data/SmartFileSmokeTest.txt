@@ -1,0 +1,7 @@
+Test name	Row CSS data	Label CSS selector	Label value	Field CSS selector	Tab
+Smart File - random cancellation reason	div[class='crudform-header form-horizontal']	label	Name	input	General
+Smart File - appointment type	div[class='crudform-header form-horizontal']	label	Appointment Label	input	General
+Smart File - appointment type	div[class='crudform-header form-horizontal']	label	Color	div[class^='color-picker']	General
+Smart File - appointment type	div[class='control-group']	label	Duration	select[class^='customSelect']	General
+Smart File - appointment type	div[class='control-group']	label	Send Reminder	select[class^='customSelect']	General
+Smart File - appointment type	div[class='control-group']	label	Note	textarea	General

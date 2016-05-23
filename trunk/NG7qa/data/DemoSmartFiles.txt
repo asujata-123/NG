@@ -1,0 +1,60 @@
+smartType	headerText	rowCSS	labelCSS	rowText	fieldCSS	inputForm	listItemCSS	value	smartFormName	action
+Reason for cancelling an appointment	AppointmentCancelReason	div[class^='crudform-header']	label	Name	input	text	null	random cancel reason sfnuid	random cancel reason	add
+Reason for cancelling an appointment	AppointmentCancelReason	div[class^='crudform-header']	label	Name	input	text	null	random cancel reason sf_upd sfnuid	random cancel reason sf_upd	update
+Reason for cancelling an appointment	AppointmentCancelReason	null	null	null	null	null	null	null	random cancel reason sf_upd	remove
+Appointment Types	Appointment Type	div[class^='crudform-header']	label	Appointment Label	input	text	null	migrane checkup sfnuid	migrane checkup	add
+Appointment Types	Appointment Type	div[class^='crudform-header']	label	Color	div[class^='color-picker']	select	b	null	migrane checkup	add
+Appointment Types	Appointment Type	div[class='control-group']	label	Duration	select[class^='customSelect']	select	option	1 Hr	migrane checkup	add
+Appointment Types	Appointment Type	div[class='control-group']	label	Send Reminder	select[class^='customSelect']	select	option	null	migrane checkup	add
+Appointment Types	Appointment Type	div[class='control-group']	label	Note	textarea[ng-model='iselected.Description']	text	textarea	note sfnuid	migrane checkup	add
+Appointment Types	Appointment Type	div[class^='crudform-header']	label	Appointment Label	input	text	null	migrane checkup sf_upd sfnuid	migrane checkup sf_upd	update
+Appointment Types	Appointment Type	null	null	null	null	null	null	null	migrane checkup sf_upd	remove
+Users	Users	div[class^='crudform-header']	label	User Name	input	text	null	smokeTest sfnuid	smokeTestFN smokeTestLN	add
+Users	Users	div[class^='control-group']	label	First Name	input	text	null	smokeTestFN	smokeTestFN smokeTestLN	add
+Users	Users	div[class^='control-group']	label	Last Name	input	text	null	smokeTestLN sfnuid	smokeTestFN smokeTestLN	add
+Users	Users	div[class^='control-group']	label	Password	input[type='password'][name='password']	password	null	Pa$$word$1234	smokeTestFN smokeTestLN	add
+Users	Users	div[class^='control-group']	label	Confirm Password	input[type='password'][name='password2']	password	null	Pa$$word$1234	smokeTestFN smokeTestLN	add
+Users	Users	div[class^='control-group']	label	Email	input[type='text'][name='email']	text	null	smokeTestFN.smokeTestLN@email.com	smokeTestFN smokeTestLN	add
+Users	Users	div[class^='control-group']	label	Roles	div[class='ngxTypeAheadMultiple required-field'] input	select	li	Admin Assistant	smokeTestFN smokeTestLN	add
+Users	Users	div[class^='control-group']	label	Last Name	input	text	null	smokeTestLN sf_upd sfnuid	smokeTestFN smokeTestLN sf_upd	update
+Users	Users	null	null	null	null	null	null	null	smokeTestFN smokeTestLN sf_upd	remove
+Resources	Resources	div[class^='crudform-header']	label	Resource Label	input[type='text']	text	null	Smoke Test MD sfnuid	Smoke Test MD	add
+Resources	Resources	div[class^='crudform-header']	label	Resource Label	input[type='text']	text	null	Smoke Test MD sf_upd sfnuid	Smoke Test MD sf_upd	update
+Resources	Resources	null	null	null	null	null	null	null	Smoke Test MD sf_upd	remove
+Region 1 Payers	Region 1 Payers	div[class^='crudform-header']	label	Payer Name	input	text	null	Smoke Test Payer sfnuid	Smoke Test Payer	add
+Region 1 Payers	Region 1 Payers	div[class^='crudform-header']	label	Payer Name	input	text	null	Smoke Test Payer sf_upd sfnuid	Smoke Test Payer sf_upd	update
+Region 1 Payers	Region 1 Payers	null	null	null	null	null	null	null	Smoke Test Payer sf_upd	remove
+GH Payer Plans	Payer Plans	div[class^='crudform-header']	label	Plan Name	input	text	null	Smoke Test Plan sfnuid	Smoke Test Plan	add
+GH Payer Plans	Payer Plans	div[class='control-group']	label	Effective Date	input[class*='hasDatepicker'][name='effectivedate']	datePicker	null	1/1/2014	Smoke Test Plan	add
+GH Payer Plans	Payer Plans	div[class='control-group']	label	Payer Name	div[class^='ngxTypeAhead']	select	li	Aetna	Smoke Test Plan	add
+GH Payer Plans	Payer Plans	div[class^='crudform-header']	label	Plan Name	input	text	null	Smoke Test Plan sf_upd sfnuid	Smoke Test Plan sf_upd	update
+GH Payer Plans	Payer Plans	null	null	null	null	null	null	null	Smoke Test Plan sf_upd	remove
+Activity	Activity	div[class^='crudform-header']	label	Activity Name	input	text	null	Smoke Test Activity sfnuid	Smoke Test Activity	add
+Activity	Activity	div[class^='control-group']	label	Activity Type	div[class^='ngxSelect'][name='Type']	select	li	Task	Smoke Test Activity	add
+Activity	Activity	div[class^='control-group']	label	Default Expected Duration	input[name='ExpectedDuration']	input	null	15	Smoke Test Activity	add
+Activity	Activity	div[class^='control-group']	label	Expected Duration Unit Code	div[class^='ngxSelect'][name='ExpectedDuration']	select	li	Minutes	Smoke Test Activity	add
+Activity	Activity	div[class^='control-group']	label	Default Priority	div[class^='ngxSelect'][name='Priority']	select	li	Normal	Smoke Test Activity	add
+Activity	Activity	div[class^='crudform-header']	label	Activity Name	input	text	null	Smoke Test Activity sf_upd sfnuid	Smoke Test Activity sf_upd	update
+Activity	Activity	null	null	null	null	null	null	null	Smoke Test Activity sf_upd	remove
+Austin Medical Group Counters	Austin Medical Group Counters	div[class='control-group']	label	Name	input[type='text'][name='name'][ng-model*='smartItemNameField']	text	null	Smoke Test Counter sfnuid	Smoke Test Counter	add
+Austin Medical Group Counters	Austin Medical Group Counters	div[class='control-group']	label	Counter Type	div[name='CounterTypeCodeId']	select	li	Guarantor	Smoke Test Counter	add
+Austin Medical Group Counters	Austin Medical Group Counters	div[class='control-group']	label	Name	input[type='text'][name='name'][ng-model='iselected.Name']	text	null	Smoke Test Counter sf_upd sfnuid	Smoke Test Counter sf_upd	update
+Austin Medical Group Counters	Austin Medical Group Counters	null	null	null	null	null	null	null	Smoke Test Counter sf_upd	remove
+Forms	Forms	div[class^='crudform-header']	label	Launch Point	select[name='launchPoint']	select	option	Medication	Medication nosfnuid	add
+Forms	Forms	div[class='control-group']	label	Form	select[name='formCode']	select	option	Company	Medication nosfnuid	add
+Forms	Forms	div[class='control-group']	label	Version	select[name='version']	select	option	1	Medication nosfnuid	add
+Forms	Forms	div[class='control-group']	label	Notes	textarea[name='description']	text	null	note sfnuid	Medication nosfnuid	update
+Forms	Forms	null	null	null	null	null	null	null	Medication nosfnuid	remove
+Charge Code	Charge Codes	div[class^='crudform-header']	label	Charge Code	input[type='text'][name='chargecode']	text	null	12345	12345 nosfnuid	add
+Charge Code	Charge Codes	div[class='control-group']	label	Code Description	input[type='text'][name='codedescription']	text	null	charge code description for smoke test sfnuid	12345 nosfnuid	add
+Charge Code	Charge Codes	div[class^='crudform-header']	label	Charge Code	input[type='text'][name='chargecode']	text	null	12345sfupd	12345sfupd nosfnuid	update
+Charge Code	Charge Codes	null	null	null	null	null	null	null	12345sfupd nosfnuid	remove
+GH Contracts	Contracts	div[class^='crudform-header']	label	Contract	input[type='text'][name='name'][ng-model*='smartItemNameField']	text	null	Smoke Test Contract sfnuid	Smoke Test Contract	add
+GH Contracts	Contracts	div[class^='crudform-content']	label	Effective Date	input[class*='hasDatepicker '][name='effectivedate']	datePicker	null	5/1/2014	Smoke Test Contract	add
+GH Contracts	Contracts	div[class^='crudform-header']	label	Contract	input[type='text'][name='name'][ng-model='iselected.Name']	text	null	Smoke Test Contract sf_upd sfnuid	Smoke Test Contract sf_upd	update
+GH Contracts	Contracts	null	null	null	null	null	null	null	Smoke Test Contract sf_upd	remove
+GH Provider	Providers	div[class^='crudform-content']	label	First Name	input[type='text'][name='firstname']	text	null	Smoke	Smoke Test	add
+GH Provider	Providers	div[class^='crudform-content']	label	Last Name	input[type='text'][name='lastname']	text	null	Test sfnuid	Smoke Test	add
+GH Provider	Providers	div[class^='crudform-content']	label	Last Name	input[type='text'][name='lastname']	text	null	Test sf_upd sfnuid	Smoke Test sf_upd	update
+GH Provider	Providers	null	null	null	null	null	null	null	Smoke Test sf_upd	remove
+Rule Set										

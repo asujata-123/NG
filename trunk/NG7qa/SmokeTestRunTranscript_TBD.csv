@@ -1,0 +1,62 @@
+null,Place Order,If layout selector comes up select 30,,Pass,,,,35148
+null,Place Order,Log in to NG7,TEST STEP DATA: regionTested = ,Fail,,,,1031,failureTrace :If layout selector comes up select 30 | Log in to NG7 | 
+null,Place Order,Set service location to <location>,TEST STEP DATA: location = ,Blocked,,,,0
+null,Place Order,Search for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,catastrophic check,,,0
+null,Place Order,Select search result for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,catastrophic check,,,0
+null,Place Order,Patient Center for <patientName> was opened,TEST STEP DATA: patientName = 30,Blocked,,,,0
+null,Place Order,Click on the tab for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,,,,0
+null,Place Order,Check that the patient center opens,,Blocked,,,,0
+null,Place Order,Click Patient Center tab,,Blocked,,,,0
+null,Place Order,Click Visit History tab,,Blocked,,,,0
+null,Place Order,Add Diagnosis,,Blocked,,,,1
+null,Place Order,Click Orders tab,,Blocked,,,,0
+null,Place Order,Check Order Menu,,Blocked,,,,0
+null,Place Order,Create Lab Orders,,Blocked,,,,0
+null,Place Order,Click Visit History tab,,Blocked,,,,0
+null,Place Order,Click Orders tab,,Blocked,,,,0
+null,Place Order,Verify Lab Orders,,Blocked,,,,0
+null,Place Order,Click Visit History tab,,Blocked,,,,0
+null,Place Order,Delete Diagnosis,,Blocked,,,,0
+null,Place Order,FAIL,1,1,17,0,0,,SUMMARY,Subha Srinivasan,
+null,Place Order,If layout selector comes up select 30,,Pass,,,,75081
+null,Place Order,Place Order: GenericPage/checkErrorPage EXCEPTION DETECTED could not attempt recovery,TEST STEP DATA: regionTested = ,Warning,,,,14550,failureTrace :If layout selector comes up select 30 | Place Order: GenericPage/checkErrorPage EXCEPTION DETECTED could not attempt recovery | 
+null,Place Order,Log in to NG7,,Fail,,,,0,failureTrace :If layout selector comes up select 30 | Place Order: GenericPage/checkErrorPage EXCEPTION DETECTED could not attempt recovery | Log in to NG7 | 
+null,Place Order,Set service location to <location>,TEST STEP DATA: location = ,Blocked,,,,1
+null,Place Order,Search for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,catastrophic check,,,0
+null,Place Order,Select search result for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,catastrophic check,,,0
+null,Place Order,Patient Center for <patientName> was opened,TEST STEP DATA: patientName = 30,Blocked,,,,0
+null,Place Order,Click on the tab for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,,,,0
+null,Place Order,Check that the patient center opens,,Blocked,,,,0
+null,Place Order,Click Patient Center tab,,Blocked,,,,1
+null,Place Order,Click Visit History tab,,Blocked,,,,0
+null,Place Order,Add Diagnosis,,Blocked,,,,0
+null,Place Order,Click Orders tab,,Blocked,,,,0
+null,Place Order,Check Order Menu,,Blocked,,,,0
+null,Place Order,Create Lab Orders,,Blocked,,,,0
+null,Place Order,Click Visit History tab,,Blocked,,,,0
+null,Place Order,Click Orders tab,,Blocked,,,,0
+null,Place Order,Verify Lab Orders,,Blocked,,,,0
+null,Place Order,Click Visit History tab,,Blocked,,,,1
+null,Place Order,Delete Diagnosis,,Blocked,,,,0
+null,Place Order,FAIL,1,1,17,0,1,,SUMMARY,Subha Srinivasan,
+null,Place Order,If layout selector comes up select 30,,Pass,,,,74282
+null,Place Order,Place Order: GenericPage/checkErrorPage EXCEPTION DETECTED could not attempt recovery,TEST STEP DATA: regionTested = ,Warning,,,,14629,failureTrace :If layout selector comes up select 30 | Place Order: GenericPage/checkErrorPage EXCEPTION DETECTED could not attempt recovery | 
+null,Place Order,Log in to NG7,,Fail,,,,1,failureTrace :If layout selector comes up select 30 | Place Order: GenericPage/checkErrorPage EXCEPTION DETECTED could not attempt recovery | Log in to NG7 | 
+null,Place Order,Set service location to <location>,TEST STEP DATA: location = ,Blocked,,,,0
+null,Place Order,Search for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,catastrophic check,,,0
+null,Place Order,Select search result for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,catastrophic check,,,0
+null,Place Order,Patient Center for <patientName> was opened,TEST STEP DATA: patientName = 30,Blocked,,,,0
+null,Place Order,Click on the tab for patient <patientName>,TEST STEP DATA: patientName = 30,Blocked,,,,0
+null,Place Order,Check that the patient center opens,,Blocked,,,,0
+null,Place Order,Click Patient Center tab,,Blocked,,,,0
+null,Place Order,Click Visit History tab,,Blocked,,,,0
+null,Place Order,Add Diagnosis,,Blocked,,,,0
+null,Place Order,Click Orders tab,,Blocked,,,,0
+null,Place Order,Check Order Menu,,Blocked,,,,0
+null,Place Order,Create Lab Orders,,Blocked,,,,0
+null,Place Order,Click Visit History tab,,Blocked,,,,0
+null,Place Order,Click Orders tab,,Blocked,,,,0
+null,Place Order,Verify Lab Orders,,Blocked,,,,0
+null,Place Order,Click Visit History tab,,Blocked,,,,0
+null,Place Order,Delete Diagnosis,,Blocked,,,,0
+null,Place Order,FAIL,1,1,17,0,1,,SUMMARY,Subha Srinivasan,

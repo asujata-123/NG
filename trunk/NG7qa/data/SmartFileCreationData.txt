@@ -1,0 +1,11 @@
+Rule Name	Parent / Data Row (line[1])	Label CSS data (line[2])	Label value (line[3])	WebElement CSS data (line[4])	WebElement value (line[5])
+Smoke Test Rule - banner	div[class='control-group']	label[class^='control-label']	Rule Name	input[type='text']	Smoke Test Rule - banner
+Smoke Test Rule - banner	div[class='control-group']	label[class^='control-label']	Event Type	input[type='text']	Insert Charge (RESPONSE SUCCESS POST)
+Smoke Test Rule - banner	null	null	null	select[data-ng-options^='eventAttribute']	Quantity
+Smoke Test Rule - banner	null	null	null	select[data-ng-options^='operatorType']	Is Greater Than
+Smoke Test Rule - banner	null	null	null	select[data-ng-options^='operatorType'] + span input[type='text']	3
+Smoke Test Rule - banner	div[class='control-group']	label[class^='control-label']	Then	input[type='text']	Send Banner
+Smoke Test Rule - banner	null	null	null	div[class^='panel-row condition-bottom'] select[data-ng-change^='getOperatorType(0'] + span input[type='text']	Smoke test rule: message
+Smoke Test Rule - banner	null	null	null	div[class^='panel-row condition-bottom'] select[data-ng-change^='getOperatorType(1'] + span input[type='text']	High
+Smoke Test Rule - banner	null	null	null	div[class^='panel-row condition-bottom'] select[data-ng-change^='getOperatorType(2'] + span input[type='text']	Smoke test rule: subject
+Smoke Test Rule - banner	null	null	null	div[class^='panel-row condition-bottom'] select[data-ng-change^='getOperatorType(3'] + span input[type='text']	"Tester1, Auto"
